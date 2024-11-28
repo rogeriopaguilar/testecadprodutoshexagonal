@@ -22,6 +22,7 @@ public class RepositorioProdutoEmMemoria implements ProdutoRepository {
     public Produto save(String nome, int quantidade) {
         Produto produto = new Produto(nome, quantidade);
         mapaProdutos.put(produto.getId(), produto);
+        System.out.println("Teste");
         return produto;
     }
 }
