@@ -15,6 +15,7 @@ public class RepositorioProdutoEmMemoria implements ProdutoRepository {
 
     @Override
     public List<Produto> findAll() {
+        System.out.println("Teste");
         return new LinkedList<Produto>(mapaProdutos.values());
     }
 
